@@ -1,0 +1,457 @@
+*{
+    margin: 0px; /*margen externo*/
+    padding: 0px;/* margen interno*/
+    box-sizing: border-box;
+}
+/* COLOR DE LA PAGINA*/
+body {
+    background-color: black;
+}
+ul {
+    list-style: none;
+    justify-content: space-around;
+}
+main {
+    display: grid;
+    width: 100vw; /*view.witch*/
+}
+/*TITULO DE LA PAGINA*/
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(142, 36, 240);
+    text-align: center;
+    font-size: 80px;
+}
+h2 {
+    color:rgb(90, 143, 241);
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+}
+/*LISTA DE NAVEGACION*/
+.header {
+    background-color: black;
+}
+.header__List {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+.header__Item a {
+    text-decoration: none;
+    color: cyan;
+    font-family: 'Righteous', cursive;
+}
+.header__Item:hover {
+    transform: scale(1.25 ,1.25);
+    transition: all 1s;
+}
+.title {
+    justify-content: center;
+}
+/*IMAGENES DE LA PAGINA PRINCIPAL*/
+.galery {
+    display: flex;
+    justify-content: center;
+}
+.galery__Img--major {
+    width: 800px;
+    height: 700px;
+}   
+
+/*IMAGENES DE LAS PAGINAS*/
+.galery__Img--main {
+    width: 200px;
+    height: 200px;
+} 
+.history {
+    color: cyan;
+    background-color:rgb(251, 11, 251);
+    font-family: 'Righteous', cursive
+}
+.title__Major {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+}
+/* PAGINA CONTACTO */
+.contacto__Grid {
+    display:grid;
+    grid-template-columns: 1fr, 1fr, 1fr ;
+    grid-template-rows: 1fr;
+    gap: 25px;
+    margin: 16px;
+}
+.contacto__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 45px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: rgb(251, 11, 251) solid 2px;
+    border-radius:5px;
+}
+.contacto__Maps {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    grid-column:3/3;
+    grid-row:1/2;
+    border: rgb(251, 11, 251) solid 2px;
+    border-radius:10px;
+}
+.size__Maps {
+    width: 400px;
+    height: 300px;
+}
+/*FORMULARIO DE LA PAGINA CONTACTO*/
+.form {
+    font-family: 'Rock Salt', cursive;
+    margin: 10px;
+    color: cadetblue;
+}
+/* PAGINA ACCESORIOS */
+.productos__Grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:"cuatro dos cinco"
+                        "uno dos cinco"
+                        "uno seis ocho";
+    column-gap: 15px;
+}
+.uno {
+    grid-area: uno;
+    background-image: url("../resoucers/uno.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.uno:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.dos {
+    grid-area: dos ;
+    background-image: url("../resoucers/dos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dos:hover{
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.tres {
+    grid-area: tres;
+    background-image: url("../resoucers/tres.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tres.hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.cuatro {
+    grid-area: cuatro;
+    background-image: url("../resoucers/cuatro.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cuatro:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.cinco {
+    grid-area: cinco;
+    background-image: url("../resoucers/cinco.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cinco:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.seis {
+    grid-area: seis;
+    background-image: url("../resoucers/seis.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.seis:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.siete {
+    grid-area: siete;
+    background-image: url("../resoucers/siete.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.siete:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.ocho {
+    grid-area: ocho;
+    background-image: url("../resoucers/ocho.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.ocho:hover{
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.diez {
+    grid-area: diez;
+    background-image: url("../resoucers/diez.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+.diez:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.productos__Texto {
+    font-family: 'Rock Salt', cursive;
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+}
+/* PAGINA INDUMENTARIA */
+.indumentaria__Grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:"indu-1 indu-principal indu-4"
+                        "indu-1 indu-principal indu-4"
+                        "indu-principal-2 indu-principal indu-3"
+                        "indu-principal-2 indu-principal indu-3";
+    column-gap: 15px;
+}
+.indu-principal {
+    grid-area: indu-principal;
+    background-image: url("../resoucers/indu-principal.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-principal:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.indu-1 {
+    grid-area: indu-1;
+    background-image: url("../resoucers/indu-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-1:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.indu-2 {
+    grid-area: indu-2;
+    background-image: url("../resoucers/indu-2.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-2:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.indu-3 {
+grid-area: indu-3;
+    background-image: url("../resoucers/indu-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-3:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.indu-4 {
+    grid-area: indu-4;
+    background-image: url("../resoucers/indu-4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-4:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+.indu-principal-2 {
+    grid-area: indu-principal-2;
+    background-image: url("../resoucers/indu-principal-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.indu-principal-2:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+/*PIE DE PAGINA DEL SITIO WEB*/
+footer {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:"none none redes"
+                        "none none derecho";
+}
+.footer__Icono {
+    grid-area:redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer__Networks {
+    width: 50px;
+    height: 50px;
+}
+.footer__Derecho {
+    color: rgb(90, 143, 241);
+    grid-area: derecho;
+}
+/* MEDIA QUERIE DE CELULAR. 
+99 SIEMPRE DEBE HABER UNA SOLA COLUMNA */
+@media (min-width:280px) and (max-width:575px) {
+    /*MODIFICO NAV*/
+    .header__List {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+/* MODIFICO IMG PRINCIPAL*/
+.galery__Img--major {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}   
+/* MODIFICO INDUMENTARIA*/
+.indumentaria__Grid {
+    height:300vh;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:"indu-1" 
+                        "indu-principal" 
+                        "indu-4"
+                        "indu-principal-2" 
+                        "indu-3";
+}
+/*MODIFICO ACCESORIOS*/
+    .productos__Grid {
+        height: 300vh;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:"cinco" 
+                            "dos" 
+                            "cuatro"
+                            "uno "
+                            "seis"
+                            "ocho";
+    }
+
+    footer {
+            grid-template-columns: 1fr;
+            grid-template-areas:"redes"
+                                "derecho";
+    }
+.size__Maps {
+    width: 200px;
+    height: 100px;
+}
+.title__Major {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__Grid {
+    display:grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: 1fr, 1fr;
+    gap: 25px;
+    margin: 16px;
+}
+.contacto__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 45px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: rgb(251, 11, 251) solid 2px;
+    border-radius:5px;
+}
+.contacto__Maps {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    grid-column:1/2;
+    grid-row:2/3;
+    border: rgb(251, 11, 251) solid 2px;
+    border-radius:10px;
+}
+}
+/*MEDIA QUAIRE DE TABLET*. siempre en px */ 
+@media (min-width:576px) and (max-width:992px) {
+    .header__List {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+.galery__Img--major {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }   
+.indumentaria__Grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"indu-1 indu-principal indu-4"
+                        "indu-1 indu-principal indu-4"
+                        "indu-principal-2 indu-principal indu-3";
+}
+
+.productos__Grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"cuatro dos cinco"
+                        "uno dos cinco"
+                        "uno seis ocho";
+}
+
+footer {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:"none none redes"
+                        "none none derecho";
+}
+}
