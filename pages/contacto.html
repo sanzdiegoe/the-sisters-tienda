@@ -17,48 +17,70 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header> <!-- ICONOS DE LA NAVEGACION DE LA PAGINA -->
-        <nav class="header__Nav">
-        <ul class="header__List">
-            <li class="header__Item"><a href="../index.html"> Inicio</a></li>
-            <li class="header__Item"><a href="indumentaria.html"> Indumentaria </a></li>
-            <li class="header__Item"><a href="accesorios.html"> Accesorios </a></li>
-            <li class="header__Item"><a href="sobre-nosotras.html"> Sobre Nosotras</a></li>
-            <li class="header__Item"><a href="#">Contacto</a></li>
-        </ul>
+    <header class="nav justify-content-center header__Boot">
+        <nav class="navbar navbar-expand-lg " >
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotras.html">Sobre Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <!-- TITULO DE PAGINA -->
+    <main><!-- TITULO DE PAGINA -->
         <section class="title">
             <h1 class="title__Major"> CONTACTO </h1>
         </section>
-        <section class="mx-5 mt-3">
-            <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="floatingInput" placeholder="name">
-                <label for="floatingInput">Name</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="Tel">
+        <section class="container-fluid">
+        <article class="row mx-5 mt-3">
+            <div class="col-xs-12 col-md-12 col-lg-6">
+                <h2>Escríbenos</h2>
+                <div class="form-floating mb-3">
+                    <input type="name" class="form-control" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Tel">
                 <label for="floatingInput">Telefono</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                </div>
+                <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="textarea" class="form-control" id="floatingInput" placeholder="comentario">
-                <label for="floatingInput">Deja tu comentario</label>
-            </div>
-            <div>
-                <button type="button" class="btn btn-outline-primary">Enviar</button>
-                <button type="button" class="btn btn-outline-secondary">Borrar</button>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Deja tu comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" > </textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                    <button type="reset" class="btn btn-outline-secondary">Borrar</button>
+                </div>
             </div>
             <!-- INFO DE UBICACION -->
-            <article class="contacto__Maps">
-                <h2>Donde encontrarnos</h2>
-                <iframe class="size__Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2790915356263!2d-58.597129284775306!3d-34.41966528050752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5b5e7fdf1ef%3A0x99a05a3b03b7768!2sMilberg%20917%2C%20B1624DRI%20Rinc%C3%B3n%20de%20Milberg%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656267693417!5m2!1ses-419!2sar" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
+            <div class= "col-xs-12 col-md-12 col-lg-6">
+                    <h2 class="contacto__Maps">Donde encontrarnos</h2>
+                    <iframe class="size__Maps d-flex align-items-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.2790915356263!2d-58.597129284775306!3d-34.41966528050752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5b5e7fdf1ef%3A0x99a05a3b03b7768!2sMilberg%20917%2C%20B1624DRI%20Rinc%C3%B3n%20de%20Milberg%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656267693417!5m2!1ses-419!2sar" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </article>
         </section>
     </main>
     <footer>

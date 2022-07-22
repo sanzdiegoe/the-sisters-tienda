@@ -28,24 +28,11 @@ h2 {
     font-size: 50px;
 }
 /*LISTA DE NAVEGACION*/
-.header {
-    background-color: black;
-}
-.header__List {
-    display:flex;
-    list-style: none;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    font-size: 25px;
-}
-.header__Item a {
-    text-decoration: none;
+.header__Boot {
     color: cyan;
     font-family: 'Righteous', cursive;
-}
-.header__Item:hover {
-    transform: scale(1.25 ,1.25);
-    transition: all 1s;
+    background-color: blueviolet;
+    font-size: 20px;
 }
 .title {
     justify-content: center;
@@ -59,9 +46,6 @@ h2 {
     width: 800px;
     height: 700px;
 }   
-button {
-    color: blueviolet;
-}
 /*IMAGENES DE LAS PAGINAS*/
 .galery__Img--main {
     width: 200px;
@@ -72,6 +56,7 @@ button {
     background-color:rgb(251, 11, 251);
     font-family: 'Righteous', cursive
 }
+
 .title__Major {
     display: flex;
     flex-direction: initial;
@@ -85,13 +70,12 @@ button {
 }
 .contacto__Maps {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    
 }
 .size__Maps {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height:400px;
+    margin: auto;
 }
 /*FORMULARIO DE LA PAGINA CONTACTO*/
 .form {
@@ -317,17 +301,21 @@ footer {
     color: rgb(90, 143, 241);
     grid-area: derecho;
 }
+
+.carrousel__Altura {
+    height: 600px;
+}
+
+
 /* MEDIA QUERIE DE CELULAR. 
 99 SIEMPRE DEBE HABER UNA SOLA COLUMNA */
 @media (min-width:280px) and (max-width:575px) {
     /*MODIFICO NAV*/
-    .header__List {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
+    .header__Boot {
+        display: flex;
+        justify-content: left;
+
+    }
 /* MODIFICO IMG PRINCIPAL*/
 .galery__Img--major {
     width: 500px;
@@ -365,8 +353,8 @@ footer {
                                 "derecho";
     }
 .size__Maps {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
 }
 .title__Major {
     display: flex;
@@ -381,16 +369,6 @@ footer {
     gap: 25px;
     margin: 16px;
 }
-.contacto__Form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    font-size: 45px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border: rgb(251, 11, 251) solid 2px;
-    border-radius:5px;
 }
 .contacto__Maps {
     display: flex;
@@ -399,18 +377,13 @@ footer {
     align-items: center;
     grid-column:1/2;
     grid-row:2/3;
-    border: rgb(251, 11, 251) solid 2px;
-    border-radius:10px;
 }
-}
+
 /*MEDIA QUAIRE DE TABLET*. siempre en px */ 
 @media (min-width:576px) and (max-width:992px) {
-    .header__List {
+    .header__Boot {
         display: flex;
-        flex-direction: column;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
     }
 .galery__Img--major {
         width: 600px;
@@ -438,4 +411,13 @@ footer {
     grid-template-areas:"none none redes"
                         "none none derecho";
 }
+}
+.nav-link {
+    color: cyan;
+} 
+.active {
+    color: cyan;
+}
+.form-label {
+    color: cyan;
 }

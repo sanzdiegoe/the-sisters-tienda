@@ -17,22 +17,38 @@
     <title>TheSisterTienda</title>
 </head>
 <body>
-    <header> <!-- ENCABEZADO: inclute la barra de navegacion y el logo -->
-        <nav class="header__Nav"> <!-- barra de navegacion/menu -->
-            <ul class="header__List">
-                <li class="header__Item"> <a href="#"> Inicio </a> </li>
-                <li class="header__Item"> <a href="pages/indumentaria.html"> Indumentaria </a></li>
-                <li class="header__Item"> <a href="pages/accesorios.html"> Accesorios </a> </li>
-                <li class="header__Item"> <a href="pages/sobre-nosotras.html"> Sobre Nosotras </a></li>
-                <li class="header__Item"> <a href="pages/contacto.html"> Contacto </a></li>
-            </ul>
-        </nav>  
+    <header class="nav justify-content-center header__Boot"> <!-- ENCABEZADO: inclute la barra de navegacion y el logo -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../29295/pages/indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../29295/pages/accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../29295/pages/sobre-nosotras.html">Sobre Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../29295/pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
     </header>
     <main>
         <!-- Todo el contenido de la pagina que no sea header o footer --> 
         <!-- IMAGENES DE LA PAGINA -->
-        <section class="galery">
-            <img class="galery__Img--major" src="resoucers/IMG_INICIO.jpg" alt="foto del logo"> 
+        <section class= "col-xs-12 col-md-12 col-lg-12 d-flex justify-content-center ">
+            <img class="img-fluid " src="resoucers/IMG_INICIO.jpg" alt="foto del logo"> 
         </section>
     </main>
     <!-- PIE DE PAGINA -->
