@@ -27,6 +27,11 @@ h2 {
     font-family: 'Righteous', cursive;
     font-size: 50px;
 }
+a:visited {
+    color: whitesmoke;
+}
+
+
 /*LISTA DE NAVEGACION*/
 .header__Boot {
     color: cyan;
@@ -300,6 +305,11 @@ footer {
 .footer__Derecho {
     color: rgb(90, 143, 241);
     grid-area: derecho;
+}
+
+input:focus {
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
 }
 
 .carrousel__Altura {
