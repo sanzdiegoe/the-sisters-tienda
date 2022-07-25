@@ -39,6 +39,10 @@ a:visited {
     background-color: blueviolet;
     font-size: 20px;
 }
+.header__Boot:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
 .title {
     justify-content: center;
 }
@@ -319,7 +323,7 @@ input:focus {
 
 /* MEDIA QUERIE DE CELULAR. 
 99 SIEMPRE DEBE HABER UNA SOLA COLUMNA */
-@media (min-width:280px) and (max-width:575px) {
+@media (min-width:320px) and (max-width:575px) {
     /*MODIFICO NAV*/
     .header__Boot {
         display: flex;
