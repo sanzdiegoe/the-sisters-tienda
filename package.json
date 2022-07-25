@@ -1,0 +1,23 @@
+{
+  "name": "29295",
+  "version": "1.0.0",
+  "description": "<h1>The Sisters Tienda-Proyecto CoderHouse</h1>\r <p> Este sitio es para un proyecto comercial entre hermanas, pensada para el curso de desarrollo web</p>\r <h2>Tecnologias usadas</h2>\r <ul>\r <li>Html5</li>\r <li>CSS3</li>\r <li>Bootstrap</li>\r <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanzdiegoe/the-sisters-tienda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanzdiegoe/the-sisters-tienda/issues"
+  },
+  "homepage": "https://github.com/sanzdiegoe/the-sisters-tienda#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
