@@ -1,0 +1,100 @@
+@import "footer";
+@import "nav";
+@import "mediaqueries";
+
+*{
+    margin: 0px; /*margen externo*/
+    padding: 0px;/* margen interno*/
+    box-sizing: border-box;
+}
+/* COLOR DE LA PAGINA*/
+body {
+    background-color: black;
+}
+ul {
+    list-style: none;
+    justify-content: space-around;
+}
+main {
+    display: grid;
+    width: 100vw; /*view.witch*/
+}
+/*TITULO DE LA PAGINA*/
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(142, 36, 240);
+    text-align: center;
+    font-size: 70px;
+}
+h2 {
+    color:rgb(90, 143, 241);
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+}
+a:visited {
+    color: whitesmoke;
+}
+
+.title {
+    justify-content: center;
+}
+/*IMAGENES DE LA PAGINA PRINCIPAL*/
+.galery {
+    display: flex;
+    justify-content: center;
+    &__Img--main {
+        width: 200px;
+        height: 200px;
+    } 
+}
+
+.history {
+    color: cyan;
+    background-color:rgb(251, 11, 251);
+    font-family: 'Righteous', cursive
+}
+
+.title__Major {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+}
+/* PAGINA CONTACTO */
+
+.contacto__Maps {
+    display: flex;
+    
+}
+.size__Maps {
+    width: 400px;
+    height:400px;
+    margin: auto;
+}
+/*FORMULARIO DE LA PAGINA CONTACTO*/
+.form {
+    font-family: 'Rock Salt', cursive;
+    margin: 10px;
+    color: cadetblue;
+}
+
+
+input:focus {
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+.carrousel__Altura {
+    height: 600px;
+}
+
+
+.nav-link {
+    color: cyan;
+} 
+.active {
+    color: cyan;
+}
+.form-label {
+    color: cyan;
+}

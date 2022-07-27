@@ -4,8 +4,11 @@
   "description": "<h1>The Sisters Tienda-Proyecto CoderHouse</h1>\r <p> Este sitio es para un proyecto comercial entre hermanas, pensada para el curso de desarrollo web</p>\r <h2>Tecnologias usadas</h2>\r <ul>\r <li>Html5</li>\r <li>CSS3</li>\r <li>Bootstrap</li>\r <li>SASS</li>\r </ul>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanzdiegoe/the-sisters-tienda.git"

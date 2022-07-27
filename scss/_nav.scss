@@ -1,0 +1,11 @@
+/*LISTA DE NAVEGACION*/
+.header__Boot {
+    color: cyan;
+    font-family: 'Righteous', cursive;
+    background-color: blueviolet;
+    font-size: 20px;
+    &:hover {
+        transform: scale(1.25,1.25);
+        transition: all 1s;
+    }
+}
