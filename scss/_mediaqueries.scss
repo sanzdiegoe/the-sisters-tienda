@@ -1,12 +1,7 @@
 /* MEDIA QUERIE DE CELULAR. 
 99 SIEMPRE DEBE HABER UNA SOLA COLUMNA */
 @media (min-width:320px) and (max-width:575px) {
-    /*MODIFICO NAV*/
-    .header__Boot {
-        display: flex;
-        justify-content: left;
 
-    }
 /* MODIFICO IMG PRINCIPAL*/
 .galery__Img--major {
     width: 500px;
@@ -14,29 +9,7 @@
     display: flex;
     justify-content: center;
 }   
-/* MODIFICO INDUMENTARIA*/
-.indumentaria__Grid {
-    height:300vh;
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas:"indu-1" 
-                        "indu-principal" 
-                        "indu-4"
-                        "indu-principal-2" 
-                        "indu-3";
-}
-/*MODIFICO ACCESORIOS*/
-    .productos__Grid {
-        height: 300vh;
-        grid-template-columns: 1fr ;
-        grid-template-rows: repeat(6,1fr);
-        grid-template-areas:"cinco" 
-                            "dos" 
-                            "cuatro"
-                            "uno "
-                            "seis"
-                            "ocho";
-    }
+
 
     footer {
             grid-template-columns: 1fr;
@@ -47,59 +20,22 @@
     width: 300px;
     height: 300px;
 }
-.title__Major {
-    display: flex;
-    flex-direction: initial;
-    justify-content: center;
-    align-items: center;
 }
-.contacto__Grid {
-    display:grid;
-    grid-template-columns:1fr ;
-    grid-template-rows: 1fr, 1fr;
-    gap: 25px;
-    margin: 16px;
-}
-}
-.contacto__Maps {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    grid-column:1/2;
-    grid-row:2/3;
-}
-
 /*MEDIA QUAIRE DE TABLET*. siempre en px */ 
 @media (min-width:576px) and (max-width:992px) {
-    .header__Boot {
-        display: flex;
-        justify-content: left;
-    }
+
 .galery__Img--major {
         width: 600px;
         height: 600px;
         display: flex;
         justify-content: center;
     }   
-.indumentaria__Grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"indu-1 indu-principal indu-4"
-                        "indu-1 indu-principal indu-4"
-                        "indu-principal-2 indu-principal indu-3";
-}
 
-.productos__Grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"cuatro dos cinco"
-                        "uno dos cinco"
-                        "uno seis ocho";
-}
 
 footer {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-areas:"none none redes"
-                        "none none derecho";
+    grid-template-areas:"none redes none"
+                        "none derecho none";
 }
 }

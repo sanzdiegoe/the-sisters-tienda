@@ -12,9 +12,13 @@
     &__Networks {
         width: 50px;
         height: 50px;
+        &:hover{transform: scale(1.25,1.25);
+            transition: all 1s;
+        } 
     }
     &__Derecho {
-        color: rgb(90, 143, 241);
+        color:$color-pagcontacto;
+        font-family: $font-principal;
         grid-area: derecho;
         display: flex;
         justify-content: end;

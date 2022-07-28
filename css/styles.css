@@ -1,3 +1,5 @@
+/* COLORES */
+/* LETRAS */
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -10,8 +12,12 @@
   .footer__Networks {
     width: 50px;
     height: 50px; }
+    .footer__Networks:hover {
+      transform: scale(1.25, 1.25);
+      transition: all 1s; }
   .footer__Derecho {
     color: #5a8ff1;
+    font-family: "Righteous", cursive;
     grid-area: derecho;
     display: flex;
     justify-content: end;
@@ -19,85 +25,48 @@
 
 /*LISTA DE NAVEGACION*/
 .header__Boot {
+  list-style: none;
   color: cyan;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   background-color: blueviolet;
   font-size: 20px; }
   .header__Boot:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1, 1);
     transition: all 1s; }
+
+a:visited {
+  color: whitesmoke; }
+
+.form-label {
+  color: cyan; }
 
 /* MEDIA QUERIE DE CELULAR. 
 99 SIEMPRE DEBE HABER UNA SOLA COLUMNA */
 @media (min-width: 320px) and (max-width: 575px) {
-  /*MODIFICO NAV*/
-  .header__Boot {
-    display: flex;
-    justify-content: left; }
   /* MODIFICO IMG PRINCIPAL*/
   .galery__Img--major {
     width: 500px;
     height: 500px;
     display: flex;
     justify-content: center; }
-  /* MODIFICO INDUMENTARIA*/
-  .indumentaria__Grid {
-    height: 300vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "indu-1"  "indu-principal"  "indu-4" "indu-principal-2"  "indu-3"; }
-  /*MODIFICO ACCESORIOS*/
-  .productos__Grid {
-    height: 300vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "cinco"  "dos"  "cuatro" "uno " "seis" "ocho"; }
   footer {
     grid-template-columns: 1fr;
     grid-template-areas: "redes" "derecho"; }
   .size__Maps {
     width: 300px;
-    height: 300px; }
-  .title__Major {
-    display: flex;
-    flex-direction: initial;
-    justify-content: center;
-    align-items: center; }
-  .contacto__Grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr;
-    gap: 25px;
-    margin: 16px; } }
-
-.contacto__Maps {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1/2;
-  grid-row: 2/3; }
+    height: 300px; } }
 
 /*MEDIA QUAIRE DE TABLET*. siempre en px */
 @media (min-width: 576px) and (max-width: 992px) {
-  .header__Boot {
-    display: flex;
-    justify-content: left; }
   .galery__Img--major {
     width: 600px;
     height: 600px;
     display: flex;
     justify-content: center; }
-  .indumentaria__Grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "indu-1 indu-principal indu-4" "indu-1 indu-principal indu-4" "indu-principal-2 indu-principal indu-3"; }
-  .productos__Grid {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "cuatro dos cinco" "uno dos cinco" "uno seis ocho"; }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "none none redes" "none none derecho"; } }
+    grid-template-areas: "none redes none" "none derecho none"; } }
 
 * {
   margin: 0px;
@@ -110,32 +79,28 @@
 body {
   background-color: black; }
 
-ul {
-  list-style: none;
-  justify-content: space-around; }
-
 main {
-  display: grid;
   width: 100vw;
   /*view.witch*/ }
 
 /*TITULO DE LA PAGINA*/
 h1 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   color: #8e24f0;
   text-align: center;
   font-size: 70px; }
 
 h2 {
   color: #5a8ff1;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-size: 50px; }
 
-a:visited {
-  color: whitesmoke; }
-
 .title {
+  display: flex;
   justify-content: center; }
+  .title__major {
+    display: flex;
+    justify-content: center; }
 
 /*IMAGENES DE LA PAGINA PRINCIPAL*/
 .galery {
@@ -147,7 +112,7 @@ a:visited {
 
 .history {
   color: cyan;
-  background-color: #fb0bfb;
+  background-color: #8e24f0;
   font-family: 'Righteous', cursive; }
 
 .title__Major {
@@ -167,22 +132,14 @@ a:visited {
 
 /*FORMULARIO DE LA PAGINA CONTACTO*/
 .form {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Righteous", cursive;
   margin: 10px;
-  color: cadetblue; }
+  color: #5a8ff1; }
 
 input:focus {
   font-size: 30px;
-  font-family: 'Righteous', cursive; }
+  font-family: "Righteous", cursive; }
 
 .carrousel__Altura {
+  width: 500px;
   height: 600px; }
-
-.nav-link {
-  color: cyan; }
-
-.active {
-  color: cyan; }
-
-.form-label {
-  color: cyan; }

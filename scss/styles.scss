@@ -1,3 +1,4 @@
+@import "variables";
 @import "footer";
 @import "nav";
 @import "mediaqueries";
@@ -11,32 +12,31 @@
 body {
     background-color: black;
 }
-ul {
-    list-style: none;
-    justify-content: space-around;
-}
+
 main {
-    display: grid;
     width: 100vw; /*view.witch*/
 }
 /*TITULO DE LA PAGINA*/
 h1 {
-    font-family: 'Kaushan Script', cursive;
-    color:rgb(142, 36, 240);
+    font-family:$font-titulo;
+    color: $color-principal;
     text-align: center;
     font-size: 70px;
 }
 h2 {
-    color:rgb(90, 143, 241);
-    font-family: 'Righteous', cursive;
+    color:$color-pagcontacto;
+    font-family: $font-principal;
     font-size: 50px;
 }
-a:visited {
-    color: whitesmoke;
-}
+
 
 .title {
+    display: flex;
     justify-content: center;
+    &__major{ display: flex;
+        justify-content: center;
+    } 
+
 }
 /*IMAGENES DE LA PAGINA PRINCIPAL*/
 .galery {
@@ -49,9 +49,9 @@ a:visited {
 }
 
 .history {
-    color: cyan;
-    background-color:rgb(251, 11, 251);
-    font-family: 'Righteous', cursive
+    color:$color-secundario;
+    background-color: $color-principal;
+    font-family: 'Righteous', cursive;
 }
 
 .title__Major {
@@ -73,28 +73,18 @@ a:visited {
 }
 /*FORMULARIO DE LA PAGINA CONTACTO*/
 .form {
-    font-family: 'Rock Salt', cursive;
+    font-family: $font-principal;
     margin: 10px;
-    color: cadetblue;
+    color: $color-pagcontacto;
 }
-
 
 input:focus {
     font-size: 30px;
-    font-family: 'Righteous', cursive;
+    font-family: $font-principal;
 }
 
 .carrousel__Altura {
+    width: 500px;
     height: 600px;
 }
 
-
-.nav-link {
-    color: cyan;
-} 
-.active {
-    color: cyan;
-}
-.form-label {
-    color: cyan;
-}
